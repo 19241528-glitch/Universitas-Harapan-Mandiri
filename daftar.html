@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pendaftaran Mahasiswa - Universitas Harapan Mandiri</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #eef2ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .register-container {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 420px;
+      padding: 40px 30px;
+    }
+
+    .register-container h2 {
+      text-align: center;
+      color: #1a237e;
+      margin-bottom: 20px;
+    }
+
+    .register-container input,
+    .register-container select {
+      width: 100%;
+      padding: 12px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      outline: none;
+    }
+
+    .register-container button {
+      width: 100%;
+      padding: 12px;
+      background-color: #fcd34d;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      color: #1a237e;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+
+    .register-container button:hover {
+      background-color: #fbc02d;
+    }
+
+    .register-container p {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .register-container a {
+      color: #1a237e;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="register-container">
+    <h2>Daftar Mahasiswa Baru</h2>
+    <form action="login.html" method="get">
+      <input type="text" placeholder="Nama Lengkap" required />
+      <input type="email" placeholder="Email Mahasiswa" required />
+      <input type="password" placeholder="Kata Sandi" required />
+      <select required>
+        <option value="">Pilih Program Studi</option>
+        <option>Sistem Informasi</option>
+        <option>Teknik Informatika</option>
+        <option>Manajemen</option>
+        <option>Akuntansi</option>
+      </select>
+      <button type="submit">Daftar Sekarang</button>
+    </form>
+    <p>Sudah punya akun? <a href="login.html">Masuk di sini</a></p>
+  </div>
+</body>
+</html>

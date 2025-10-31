@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Sejarah - Universitas Harapan Mandiri</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+      .dropdown-content {
+        display: none;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s, transform 0.3s;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-50">
+    <!-- Navbar -->
+    <header class="bg-navy-900 text-white sticky top-0 z-50 shadow-lg" style="background-color: #1a237e;">
+      <div class="max-w-7xl mx-auto px-4 py-3">
+        <!-- Top Bar -->
+        <div class="hidden md:flex justify-end space-x-6 text-sm pb-2 border-b border-opacity-20 border-gray-300">
+          <a href="tel:+1234567890" class="hover:text-amber-300 transition-colors duration-300">
+            <i class="fas fa-phone mr-2"></i>+123 456 7890
+          </a>
+          <a href="mailto:info@uhm.ac.id" class="hover:text-amber-300 transition-colors duration-300">
+            <i class="fas fa-envelope mr-2"></i>info@uhm.ac.id
+          </a>
+        </div>
+        
+        <!-- Main Navbar -->
+        <div class="flex items-center justify-between py-2">
+          <div class="flex items-center space-x-4">
+            <img src="images/logo-kampus.png" alt="UHM Logo" class="h-12 transition-transform duration-300 hover:scale-110">
+            <h1 class="text-xl md:text-2xl font-bold bg-gradient-to-r from-white to-amber-300 bg-clip-text text-transparent">
+              Universitas Harapan Mandiri
+            </h1>
+          </div>
+
+          <!-- Desktop Menu -->
+          <nav class="hidden md:flex space-x-6 text-sm">
+            <a href="beranda.html" class="relative group py-2">
+              <span class="hover:text-amber-300 transition-colors duration-300">Beranda</span>
+              <span class="absolute bottom-0 left-0 w-full h-0.5 bg-amber-300 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <div class="dropdown relative group py-2">
+              <span class="hover:text-amber-300 transition-colors duration-300 cursor-pointer">
+                Profil <i class="fas fa-chevron-down ml-1 text-xs"></i>
+              </span>
+              <div class="dropdown-content absolute top-full left-0 mt-1 w-48 bg-white text-gray-800 rounded-lg shadow-xl py-2">
+                <a href="sejarah.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-navy-900 transition-colors duration-300">Sejarah</a>
+                <a href="visi-misi.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-navy-900 transition-colors duration-300">Visi & Misi</a>
+                <a href="fakultas-jurusan.html" class="block px-4 py-2 hover:bg-gray-100 hover:text-navy-900 transition-colors duration-300">Fakultas Dan Jurusan</a>
+              </div>
+            </div>
+            <a href="berita.html" class="relative group py-2">
+              <span class="hover:text-amber-300 transition-colors duration-300">Berita</span>
+              <span class="absolute bottom-0 left-0 w-full h-0.5 bg-amber-300 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+            <a href="agenda.html" class="relative group py-2">
+              <span class="hover:text-amber-300 transition-colors duration-300">Agenda</span>
+              <span class="absolute bottom-0 left-0 w-full h-0.5 bg-amber-300 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+            </a>
+          </nav>
+
+          <!-- Mobile Menu Button -->
+          <button class="md:hidden text-white hover:text-amber-300 transition-colors duration-300" id="mobile-menu-button">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+          <nav class="flex flex-col space-y-4 py-4 border-t border-opacity-20 border-gray-300">
+            <a href="beranda.html" class="hover:text-amber-300 transition-colors duration-300">Beranda</a>
+            <a href="sejarah.html" class="hover:text-amber-300 transition-colors duration-300">Sejarah</a>
+            <a href="visi-misi.html" class="hover:text-amber-300 transition-colors duration-300">Visi Misi</a>
+            <a href="fakultas-jurusan.html" class="hover:text-amber-300 transition-colors duration-300">Fakultas Dan Jursan</a>
+            <a href="berita.html" class="hover:text-amber-300 transition-colors duration-300">Berita</a>
+            <a href="agenda.html" class="hover:text-amber-300 transition-colors duration-300">Agenda</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section Sejarah -->
+    <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img src="images/2020.jpg" alt="Background" class="w-full h-full object-cover">
+        <div class="absolute inset-0" style="background-color: rgba(26, 35, 126, 0.85);"></div>
+      </div>
+      <div class="relative z-10 text-center text-white px-4" data-aos="fade-up">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6">Sejarah Kami</h1>
+        <p class="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto">Perjalanan membangun pendidikan berkualitas sejak 1990</p>
+      </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="space-y-20">
+          <!-- Timeline Item 1990 -->
+          <div class="flex items-center gap-8" data-aos="fade-up">
+            <div class="w-1/2 pr-8 text-right">
+              <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-amber-100">
+                <h3 class="text-2xl font-bold text-navy-900 mb-4">1990 - Pendirian</h3>
+                <p class="text-gray-600">Universitas Harapan Mandiri didirikan dengan visi menjadi pusat pendidikan unggulan di Indonesia.</p>
+              </div>
+            </div>
+            <div class="relative flex items-center justify-center">
+              <div class="w-4 h-4 bg-amber-400 rounded-full"></div>
+              <div class="absolute w-1 h-24 bg-amber-400 top-1/2"></div>
+            </div>
+            <div class="w-1/2">
+              <img src="images/1990.jpg" alt="1990" class="rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 w-full h-48 object-cover">
+            </div>
+          </div>
+
+          <!-- Timeline Item 2000 -->
+          <div class="flex items-center gap-8" data-aos="fade-up">
+            <div class="w-1/2">
+              <img src="images/2000.jpg" alt="2000" class="rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 w-full h-48 object-cover">
+            </div>
+            <div class="relative flex items-center justify-center">
+              <div class="w-4 h-4 bg-amber-400 rounded-full"></div>
+              <div class="absolute w-1 h-24 bg-amber-400 top-1/2"></div>
+            </div>
+            <div class="w-1/2 pl-8">
+              <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-amber-100">
+                <h3 class="text-2xl font-bold text-navy-900 mb-4">2000 - Pengembangan</h3>
+                <p class="text-gray-600">Pembangunan gedung baru dan perluasan fasilitas pembelajaran modern.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2010 -->
+          <div class="flex items-center gap-8" data-aos="fade-up">
+            <div class="w-1/2 pr-8 text-right">
+              <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-amber-100">
+                <h3 class="text-2xl font-bold text-navy-900 mb-4">2010 - Akreditasi Unggul</h3>
+                <p class="text-gray-600">Pencapaian akreditasi Unggul dan pengakuan sebagai universitas unggulan.</p>
+              </div>
+            </div>
+            <div class="relative flex items-center justify-center">
+              <div class="w-4 h-4 bg-amber-400 rounded-full"></div>
+              <div class="absolute w-1 h-24 bg-amber-400 top-1/2"></div>
+            </div>
+            <div class="w-1/2">
+              <img src="images/2010.jpg" alt="2010" class="rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 w-full h-48 object-cover">
+            </div>
+          </div>
+
+          <!-- Timeline Item 2020 -->
+          <div class="flex items-center gap-8" data-aos="fade-up">
+            <div class="w-1/2">
+              <img src="images/2020.jpg" alt="2020" class="rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 w-full h-48 object-cover">
+            </div>
+            <div class="relative flex items-center justify-center">
+              <div class="w-4 h-4 bg-amber-400 rounded-full"></div>
+              <div class="absolute w-1 h-24 bg-amber-400 top-1/2"></div>
+            </div>
+            <div class="w-1/2 pl-8">
+              <div class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border-2 border-amber-100">
+                <h3 class="text-2xl font-bold text-navy-900 mb-4">2020 - Era Digital</h3>
+                <p class="text-gray-600">Transformasi digital dan implementasi sistem pembelajaran hybrid.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="grid md:grid-cols-4 gap-12 mb-12">
+            <!-- Tentang Universitas -->
+            <div class="space-y-4">
+              <h4 class="text-xl font-bold mb-4">Universitas Harapan Mandiri</h4>
+              <p class="text-gray-400">Membangun masa depan melalui pendidikan berkualitas dan inovasi berkelanjutan.</p>
+              <div class="flex space-x-4">
+                <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+      
+            <!-- Quick Links -->
+            <div>
+              <h4 class="text-xl font-bold mb-4">Quick Links</h4>
+              <ul class="space-y-2">
+                <li><a href="beranda.html" class="text-gray-400 hover:text-amber-400 transition-colors">Beranda</a></li>
+                <li><a href="berita.html" class="text-gray-400 hover:text-amber-400 transition-colors">Berita</a></li>
+                <li><a href="agenda.html" class="text-gray-400 hover:text-amber-400 transition-colors">Agenda</a></li>
+              </ul>
+            </div>
+  
+      
+            <!-- Kontak -->
+            <div>
+              <h4 class="text-xl font-bold mb-4">Kontak</h4>
+              <ul class="space-y-2 text-gray-400">
+                <li class="flex items-center space-x-2">
+                  <i class="fas fa-map-marker-alt w-5"></i>
+                  <span>Jl. Pendidikan No. 123, Jakarta</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <i class="fas fa-phone w-5"></i>
+                  <span>+62 21 1234 5678</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <i class="fas fa-envelope w-5"></i>
+                  <span>info@uhm.ac.id</span>
+                </li>
+              </ul>
+            </div>
+      
+            <!-- Newsletter -->
+            <div>
+              <h4 class="text-xl font-bold mb-4">Newsletter</h4>
+              <p class="text-gray-400 mb-4">Dapatkan informasi terbaru tentang kampus</p>
+              <form class="space-y-2">
+                <input type="email" placeholder="Email Anda" class="w-full px-4 py-2 rounded-lg bg-gray-800 text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-amber-400">
+                <button class="w-full px-4 py-2 bg-amber-400 text-gray-900 rounded-lg font-semibold hover:bg-amber-300 transition-colors">Subscribe</button>
+              </form>
+            </div>
+          </div>
+      
+          <!-- Copyright -->
+          <div class="border-t border-gray-800 pt-8 text-center text-gray-500">
+            <p>&copy; 2025 Universitas Harapan Mandiri. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+
+      // Mobile menu toggle
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenuButton.innerHTML = mobileMenu.classList.contains('hidden') 
+          ? '<i class="fas fa-bars text-2xl"></i>' 
+          : '<i class="fas fa-times text-2xl"></i>';
+      });
+    </script>
+  </body>
+</html>
